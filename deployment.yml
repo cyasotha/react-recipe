@@ -1,32 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
+metadata: null
   name: react-recipe-web
-spec:
+spec: null
   replicas: 1
-  selector:
-    matchLabels:
+  selector: null
+    matchLabels: null
       app: react-recipe-web
-  template:
-    metadata:
-      labels:
+  template: null
+    metadata: null
+      labels: null
         app: react-recipe-web
-    spec:
-      containers:
+    spec: null
+      containers: null
       - name: react-recipe-web
         image: ychandrakumaran/react-recipe_web
-        ports:
+        ports: null
         - containerPort: 3000
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: react-recipe-web
-spec:
-  type: NodePort
-  selector:
-    app: react-recipe-web
-  ports:
-  - protocol: TCP
-    port: 3000
-    targetPort: 3000
